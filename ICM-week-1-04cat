@@ -1,0 +1,86 @@
+function setup() {
+  createCanvas(600, 400);
+}
+
+function draw() {
+  background(150);
+
+  fill(0);
+  triangle(220, 140, 220, 60, 280, 110);
+  triangle(380, 140, 380, 60, 320, 110);
+  
+  //tail
+  noFill();
+  stroke(255, 102, 0);
+  strokeWeight(6);
+  //line(520, 200, 390, 160);
+  //line(480, 390,350, 350);
+  stroke(0, 0, 0);
+  bezier(520, 200, 390, 160,480, 390,350, 350);
+  
+  //body
+  fill(255);
+  strokeWeight(2);
+  ellipse(width/2, 300, 120, 200);
+  
+  //body2
+  fill(200);
+  strokeWeight(2);
+  ellipse(width/2, 300, 70, 140);
+  
+  
+  //foot
+  fill(255);
+  ellipse(260, 270, 50, 40);
+  ellipse(340, 270, 50, 40);
+  
+  
+  //head  
+  strokeWeight(2);
+  fill(255);
+  ellipse(width / 2, 180, 200, 150);
+
+  //spots
+  noStroke();
+  fill(50);
+  ellipse(236, 210, 50, 30);
+  ellipse(270, 160, 60, 50);
+  
+  //eye
+  stroke(0);
+  strokeWeight(2);
+  fill(235, 180, 113)
+  circle(250, 180, 50);
+  circle(350, 180, 50);
+  
+  //eyeball
+  stroke(0);
+  strokeWeight(2);
+  fill(0);
+  ellipse(250, 180, 20, 40);
+  ellipse(350, 180, 20, 40);
+ 
+  /*
+  strokeWeight(5);
+  point(285, 230);
+  point(294, 235);
+  point(300, 220);
+  point(306, 235);
+  point(315, 230);
+  */
+  
+  //mouth
+  strokeWeight(1);
+  beginShape();
+  curveVertex(285, 230);
+  curveVertex(285, 230);
+  curveVertex(294, 235);
+ // curveVertex(300, 220);
+ // curveVertex(300, 220);
+ // curveVertex(294, 235);
+  curveVertex(306, 235);
+  curveVertex(315, 230);
+  curveVertex(315, 230);
+  endShape();
+  
+}
