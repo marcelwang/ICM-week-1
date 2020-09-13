@@ -29,10 +29,10 @@ function draw() {
   ellipse(width/2, 300, 70, 140);
   
   
-  //foot
+  //hand
   fill(255);
-  ellipse(260, 270, 50, 40);
-  ellipse(340, 270, 50, 40);
+  ellipse(260, 270, 55, 45);
+  ellipse(340, 270, 55, 45);
   
   
   //head  
@@ -82,5 +82,7 @@ function draw() {
   curveVertex(315, 230);
   curveVertex(315, 230);
   endShape();
+  
+  
   
 }
